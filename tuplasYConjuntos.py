@@ -50,9 +50,16 @@ print(nuevoConjunto3)
 # Tuplas - es un tipo de estructura de datos que puedo contener N elementos dentro de uno mismo. Es ordenada. 
 # No se puede modificar en tiempo de ejecuccion.
 # Es buena practica poner parentesis
+# Se tiene que transformar de lista a tupla
 
 coor = (1, 2)
 cumpleanios = (12, 6, 2001)
+
+# Desempaquetado
+
+x, y = coor
+
+dia, _, _ = cumpleanios
 
 
 
