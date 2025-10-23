@@ -1,0 +1,36 @@
+[
+    {
+      "tipo": "Lobo",
+      "edad": 5
+    },
+    {
+      "tipo": "Perro",
+      "edad": 3
+    },
+    {
+      "tipo": "León",
+      "edad": 8
+    },
+    {
+      "tipo": "Gato",
+      "edad": 2
+    },
+    {
+      "tipo": "Elefante",
+      "edad": 15
+    },
+    {
+      "tipo": "Foca",
+      "edad": 9
+    },
+    {
+      "tipo": "Jirafa",
+      "edad": 11
+    },
+    {
+      "tipo": "Marmota",
+      "edad": 12
+    }
+
+]
+

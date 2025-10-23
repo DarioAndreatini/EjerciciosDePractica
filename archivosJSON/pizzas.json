@@ -1,0 +1,22 @@
+[
+    {
+      "nombre": "Muzzarella",
+      "precio": 2500
+    },
+    {
+      "nombre": "Napolitana",
+      "precio": 2800
+    },
+    {
+      "nombre": "Fugazzeta",
+      "precio": 3000
+    },
+    {
+      "nombre": "Calabresa",
+      "precio": 3200
+    },
+    {
+      "nombre": "Cuatro Quesos",
+      "precio": 3500
+    }
+]
