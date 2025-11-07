@@ -1,0 +1,47 @@
+Simulacro Parcial
+La empresa EcoEnergía S.A. está desarrollando una plataforma llamada EnergiControl, que permitirá analizar la producción de plantas de energía renovable en distintas regiones.
+ 
+Generación de archivos
+   -Crear el archivo plantas.txt con la estructura:
+         nombrePlanta;códigoPlanta
+    Solicitar al usuario la carga de plantas y sus códigos (entre 1 y 150, no repetidos).
+    Finalizar cuando ingrese FIN.
+ 
+Crear el archivo produccion.txt con 12.000 registros automáticos:
+ 
+id_registro;planta;tipo_energia;kw_generados
+ 
+Donde:
+ 
+    id_registro: incremental desde 1
+ 
+    planta: una seleccionada al azar desde plantas.txt, el nombre de la planta.
+ 
+    tipo_energia: solar, eolica, hidroeléctrica, geotérmica, biomasa
+ 
+    kw_generados: número entero aleatorio entre 10 y 500
+ 
+Procesamiento
+ 
+     Calcular el total de KW generados por cada tipo de energía y mostrarlo.
+ 
+     Determinar la planta que generó mayor cantidad total de energía renovable solar y eólica combinadas.
+ 
+    Crear un diccionario resumen como:
+ 
+    {
+        "Planta Delta": {"Solar":5000,"Eolica":3000,"Hidroelectrica":2000,"Geotermica":500,"Biomasa":700},
+        "Planta Sur": ...
+    }
+ 
+    Si no hay valores para algún tipo, colocar 0.
+ 
+Indicadores finales
+ 
+- Tipo de energía con mayor producción total.
+ 
+- Promedio global de kilowatts generados por registro.
+ 
+- El programa debe incluir un menú de opciones para acceder a los distintos reportes.
+ 
+ 
