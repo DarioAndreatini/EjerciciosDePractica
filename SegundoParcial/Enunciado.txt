@@ -21,11 +21,11 @@ Donde:
  
     kw_generados: número entero aleatorio entre 10 y 500
  
-Procesamiento
+Procesamiento:
  
-     Calcular el total de KW generados por cada tipo de energía y mostrarlo.
+    Calcular el total de KW generados por cada tipo de energía y mostrarlo.
  
-     Determinar la planta que generó mayor cantidad total de energía renovable solar y eólica combinadas.
+    Determinar la planta que generó mayor cantidad total de energía renovable solar y eólica combinadas.
  
     Crear un diccionario resumen como:
  
@@ -36,7 +36,7 @@ Procesamiento
  
     Si no hay valores para algún tipo, colocar 0.
  
-Indicadores finales
+Indicadores finales:
  
 - Tipo de energía con mayor producción total.
  
