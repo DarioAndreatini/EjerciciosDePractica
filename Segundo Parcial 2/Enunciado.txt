@@ -1,0 +1,111 @@
+Simulacro de Parcial N° 2: "Logística Global"
+
+Materia: Algoritmos y Estructuras de Datos I
+
+Tema: Archivos, Excepciones, Conjuntos, Diccionarios y Recursividad
+
+Contexto
+
+La empresa de transporte "Logística Global" necesita desarrollar un sistema para gestionar sus choferes y analizar los envíos realizados durante el último mes. 
+Se requiere un programa en Python que permita generar datos de prueba, procesarlos y emitir reportes estadísticos.
+
+1. Generación de Archivos
+
+El programa debe permitir generar dos archivos de texto plano (.txt) con las siguientes especificaciones:
+
+    A. Archivo choferes.txt
+
+    Estructura de cada línea: ApellidoNombre;Legajo
+
+    Método de carga: Solicitar la carga de datos al usuario por teclado.
+
+    Validaciones obligatorias:
+
+    Legajo: Debe ser un número entero entre 1000 y 9999.
+
+    Utilizar manejo de excepciones (try-except) para validar que sea un número entero.
+
+    Unicidad: No puede haber legajos repetidos.
+
+    Debe utilizar un Conjunto (set) para validar que el legajo no haya sido ingresado previamente en la misma sesión.
+
+    Salida: La carga finaliza cuando el usuario ingresa la palabra "FIN" como nombre.
+
+B. Archivo envios.txt
+
+    Método de carga: Generación automática (simulación).
+
+    Volumen: Generar 5.000 registros.
+
+    Estructura de cada línea: ID_Envio;Legajo_Chofer;Zona;Kilos
+
+    ID_Envio: Número incremental comenzando desde 1.
+
+    Legajo_Chofer: Seleccionado al azar de los legajos existentes en choferes.txt.
+
+    Zona: Seleccionada al azar de la siguiente lista: "Norte", "Sur", "Este", "Oeste", "CABA".
+
+    Kilos: Número entero aleatorio entre 50 y 2000.
+
+2. Procesamiento de Datos
+
+    Debe leer el archivo envios.txt generado y procesar la información para obtener los siguientes resultados en memoria:
+
+    Diccionario Resumen por Chofer:
+
+    Debe crear una estructura de diccionario anidado donde la clave principal sea el Legajo del chofer y el valor sea otro diccionario con los kilos acumulados por zona.
+
+    Formato:
+
+    {
+        '1001': {'Norte': 500, 'Sur': 0, 'Este': 1200, ...},
+        '2020': {'Norte': 100, 'Sur': 300, ...},
+        ...
+    }
+
+
+    Total General de Kilos:
+
+    Calcular la suma total de todos los kilos transportados por la empresa en todos los envíos.
+
+3. Requisito Especial: Recursividad
+
+    Para el cálculo del Total General de Kilos (punto 2 del procesamiento), el sistema DEBE utilizar una función recursiva.
+
+    Lógica: Durante la lectura del archivo, almacene todos los pesos (Kilos) en una lista auxiliar.
+
+    Función: Cree una función llamada sumar_recursivamente(lista) que reciba esa lista y retorne la suma total.
+
+    Nota: Considere las limitaciones de recursión de Python si la lista es muy grande.
+
+4. Salida y Reportes
+
+El programa debe presentar un menú principal con las siguientes opciones. Las opciones de reporte (A, B, C) solo deben estar disponibles si los datos ya han sido procesados.
+
+    1. Generar Archivo de Choferes (Manual)
+
+    2. Generar Archivo de Envíos (Automático)
+
+    3. Procesar Datos
+
+    4. Reportes:
+
+        A. Listar rendimiento por Chofer: Mostrar legajo y kilos por zona (basado en el diccionario resumen).
+
+        B. Zona de Mayor Movimiento: Mostrar cuál es la zona con mayor cantidad de kilos transportados (Total empresa).
+
+        C. Promedio de Kilos por Envío: Mostrar el promedio simple (Total Kilos / Cantidad Envíos). Importante: Para este cálculo, debe utilizar el total obtenido mediante la función recursiva.
+
+    5. Salir
+
+Criterios de Evaluación:
+
+Correcto uso de try-except para validaciones.
+
+Correcta implementación de sets para evitar duplicados.
+
+Manejo adecuado de archivos (open, write, read, split).
+
+Uso apropiado de Diccionarios.
+
+Implementación correcta de la función recursiva (Caso Base y Paso Recursivo).
