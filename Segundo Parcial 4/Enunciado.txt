@@ -1,0 +1,47 @@
+# Simulacro de Parcial N° 3: "CyberLeague 2025"
+
+**Objetivo:** Desarrollar un sistema integral de gestión de torneos aplicando validaciones, manejo de archivos, estructuras de datos complejas y persistencia en JSON.
+
+## 1. Módulo de Carga (Archivos y Validaciones)
+
+Debe implementar dos funciones generadoras:
+
+### Función `cargar_equipos()`
+Crea el archivo `equipos.csv`.
+* **Estructura:** `ID_Equipo;Nombre;Region`
+* **Validaciones:**
+    * **Unicidad:** El ID y el Nombre no pueden repetirse. Utilice conjuntos (`set`) para verificar esto eficientemente.
+    * **Tipos:** El ID debe ser numérico (validar con `try-except`).
+    * **Dominio:** La región debe ser "SAM", "NA" o "EU".
+* La carga finaliza cuando se ingresa "FIN".
+
+### Función `simular_partidos()`
+Crea el archivo `resultados.txt`.
+* Debe leer los equipos disponibles de `equipos.csv`.
+* Si hay menos de 2 equipos, mostrar error.
+* Generar 100 registros con el formato: `ID_P;ID_Eq1;ID_Eq2;Score1;Score2`.
+* Los equipos enfrentados no pueden ser el mismo.
+
+## 2. Módulo de Procesamiento (Lógica de Negocio)
+
+### Función `procesar_torneo()`
+Lee el archivo `resultados.txt` y calcula la tabla de posiciones.
+* **Estructura de Datos:** Use un diccionario principal donde la clave es el ID del equipo. 
+El valor debe ser otro diccionario con contadores: `{'Pts': 0, 'PJ': 0, 'PG': 0, 'PE': 0, 'PP': 0, 'Diff': 0}`.
+
+* **Reglas:**
+    * Ganar = 3 pts.
+    * Empatar = 1 pt.
+    * Perder = 0 pts.
+    * `Diff` = Score a favor - Score en contra.
+
+## 3. Módulo de Reportes y Exportación
+
+### Función `exportar_json()`
+* Debe tomar el diccionario de posiciones procesado.
+* **Ordenamiento:** Ordenar los equipos primero por **Puntos (desc)** y luego por **Diferencia de Gol (desc)**.
+* **Salida:** Guardar esta lista ordenada en `ranking_final.json`.
+
+### Función `informe_regional()`
+* Utilizando los datos procesados y cruzando información con la región de cada equipo, determine qué región obtuvo más victorias totales sumando las de todos sus equipos.
+```eof

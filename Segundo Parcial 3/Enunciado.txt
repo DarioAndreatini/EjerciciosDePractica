@@ -1,0 +1,14 @@
+1- 8/10puntos
+Generar un archivo con 100 ingresos. Votos. Hay 2 cifras de listas. 4 zonas y edad 16-110. Una lista y una zona puede tener varios votos.
+
+A- 25% crear un archivo con la función ‘generarArchivoGeneral’. Cada linea tiene que quedar en este orden:
+Codigo de lista ; codigo de zona ; edad  /n -
+
+B- 25% leer el archivo, hacer un diccionario que contenga {zona:cantidad de votos} y mostrarlo por consola.
+
+C-crear un archivo con la función ‘resumenVotos’. Ordenado de la misma manera que el diccionario
+
+D-25%Hacer el recuento de cuantas personas de entre 16-20 años votaron. Imprimir en consola
+
+2- 2/8 puntos
+Realizar una función recursiva que, sin usar cadena de caracteres, nos devuelva las cifras del numero que se le indique

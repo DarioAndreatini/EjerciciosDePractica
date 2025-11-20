@@ -1,0 +1,54 @@
+[
+    {
+        "Posicion": 1,
+        "Equipo": "D",
+        "Region": "EU",
+        "Estadisticas": {
+            "Pts": 13,
+            "PJ": 7,
+            "PG": 4,
+            "PE": 1,
+            "PP": 2,
+            "Diff": 6
+        }
+    },
+    {
+        "Posicion": 2,
+        "Equipo": "B",
+        "Region": "SAM",
+        "Estadisticas": {
+            "Pts": 7,
+            "PJ": 6,
+            "PG": 2,
+            "PE": 1,
+            "PP": 3,
+            "Diff": -4
+        }
+    },
+    {
+        "Posicion": 3,
+        "Equipo": "C",
+        "Region": "NA",
+        "Estadisticas": {
+            "Pts": 6,
+            "PJ": 4,
+            "PG": 2,
+            "PE": 0,
+            "PP": 2,
+            "Diff": 0
+        }
+    },
+    {
+        "Posicion": 4,
+        "Equipo": "A",
+        "Region": "SAM",
+        "Estadisticas": {
+            "Pts": 3,
+            "PJ": 3,
+            "PG": 1,
+            "PE": 0,
+            "PP": 2,
+            "Diff": -2
+        }
+    }
+]

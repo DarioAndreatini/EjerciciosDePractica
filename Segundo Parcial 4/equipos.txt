@@ -1,0 +1,4 @@
+1;A;SAM
+2;B;SAM
+3;C;NA
+4;D;EU
